@@ -16,19 +16,33 @@
             integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
             crossorigin="anonymous"
         />
+        <link rel="stylesheet" type="text/css" href="styles.css">
     </head>
 
     <body>
-        <header>
-            <h1>Atlas</h1>
+        <header class="d-flex flex-column justify-content-center align-items-center p-3 mb-3 bg-light border-bottom">
+            <h1>World Atlas</h1>
+            <h4>Region:</h4> <!-- Subtitle added here -->
+            <select id="region-select" class="form-select form-select-sm">
+                <option value="africa">Africa</option>
+                <option value="americas">America</option>
+                <option value="asia">Asia</option>
+                <option value="europe" selected>Europe</option>
+                <option value="oceania">Oceania</option>
+            </select>
         </header>
+        
         <main class="container-fluid">
-            <div class="row" id="staty">
+            <div class="row" id="staty"></div>
             </div>
         </main>
         <footer>
             
         </footer>
+        <div id="modal" class="modal">
+            <span class="close">&times;</span>
+            <img class="modal-content" id="modal-img">
+        </div>
         <!-- Bootstrap JavaScript Libraries -->
         <script
             src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"

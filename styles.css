@@ -1,0 +1,112 @@
+/* Center the header content */
+header {
+    text-align: center; /* Aligns the header content to the center */
+    background-color: #ffffff;
+}
+
+/* Style the subtitle */
+.subtitle {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 10px; /* Adjust the value as needed for space below the subtitle */
+}
+
+/* Limit the width of the select element and center it */
+#region-select {
+    width: 150px; /* Or you can set a specific width like 300px */
+    max-width: 300px; /* Maximum width of the select element */
+    margin: 0 auto; /* Centers the select element horizontally */
+    height: 40px;
+    border-radius: 10px; /* Rounded corners */
+}
+
+
+/* Reset default browser styles */
+body, h1, p {
+    margin: 0;
+    padding: 0;
+}
+
+/* Set background color and font styles */
+body {
+    background-color: #f2f2f2;
+    font-family: Arial, sans-serif;
+}
+
+/* Center the content */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Style the heading */
+h1 {
+    font-size: 50px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+/* Style the paragraph */
+p {
+    font-size: 16px;
+    color: #666;
+}
+
+/* Add spacing around the card */
+.card {
+    margin-bottom: 10px; /* Adjust the value as needed for space around the card */
+    border-radius: 10px; /* Rounded corners for the card */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional: Adds a subtle shadow for depth */
+}
+
+/* Center and round the image */
+.card-img-top {
+    height: 200px; /* Fixed height for all flags */
+    object-fit: cover; /* Maintain aspect ratio without stretching */
+    width: 95%; /* Image covers most of the card width */
+    margin: 0 auto; /* Centers the image in the card */
+    display: block; /* Allows margin to center the image */
+    border: 2px solid rgba(151, 151, 151, 0.5); /* Black border */
+    border-radius: 5px; /* Slightly rounded corners for the image */
+    margin-top: 5px; /* Adjust the value as needed for space above the image */
+    cursor: pointer;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.9);
+}
+
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+}
+
+.close {
+    position: absolute;
+    top: 50px;
+    right: 570px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
